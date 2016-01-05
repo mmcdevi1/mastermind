@@ -1,23 +1,9 @@
+require_relative 'hole'
+
 module MasterMind
 
-  class BoardHole
-    attr_accessor :value
+  class BoardHole < Hole
 
-    def initialize(value)
-      @value = value
-    end
-
-    def to_s
-      empty? ? 'O' : self.value
-    end
-
-    def empty?
-      self.value == ' '
-    end
-
-    def mark_value(peg)
-      self.value = peg
-    end
   end
 
 end

@@ -18,6 +18,10 @@ module MasterMind
       system 'clear'
       board_row.each { |_, row| puts row.render_holes }
     end
+
+    def full_board?
+
+    end
   end
 
 end
