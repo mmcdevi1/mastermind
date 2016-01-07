@@ -23,6 +23,8 @@ module MasterMind
     end
 
     def generate_secret_code
+      # The opposing player must generate a secret code with
+      # length of 4
       4.times do
         SECRET_CODE << CHOICES.values.shuffle.last
       end
